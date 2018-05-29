@@ -1,16 +1,37 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Inicio</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h4>Bienvenidos a BananaIT!</h4>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur in maiores aliquid officia voluptates rem earum, inventore adipisci quasi laboriosam.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <button ion-button color="bananap">Button</button>
+  <button ion-button color="light">Light</button>
+  <button ion-button>Default</button>
+  <button ion-button color="secondary">Secondary</button>
+  <button ion-button color="danger">Danger</button>
+  <button ion-button color="dark">Dark</button>
+
+  <!-- Float the icon left -->
+  <button ion-button icon-left color="primary">
+    <ion-icon name="logo-bitcoin"></ion-icon>
+    Left Icon
+  </button>
+
+  <!-- Float the icon right -->
+  <button ion-button icon-right color="primary">
+    Right Icon
+    <ion-icon name="home"></ion-icon>
+  </button>
+
+  <!-- Only icon (no text) -->
+  <button ion-button icon-only color="primary">
+    <ion-icon name="home"></ion-icon>
+  </button>
+
 </ion-content>
