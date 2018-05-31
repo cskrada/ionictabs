@@ -11,5 +11,8 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  otraPagina(){
+  	this.navCtrl.push(MasinfoPage);
+  }
 
 }
