@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { ModclientePage } from '../modcliente/modcliente';
 import { VerclientePage } from '../vercliente/vercliente';
 import { ClientesPage } from '../clientes/clientes';
 import { InicioPage } from '../inicio/inicio';
@@ -22,6 +23,7 @@ export class TabsPage {
   tab6Root = InicioPage;
   tab7Root = ClientesPage;
   tab8Root = VerclientePage;
+  tab9Root = ModclientePage;
 
   constructor() {
 

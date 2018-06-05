@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { ModclientePage } from '../pages/modcliente/modcliente';
 import { VerclientePage } from '../pages/vercliente/vercliente';
 import { ClientesPage } from '../pages/clientes/clientes';
 import { InicioPage } from '../pages/inicio/inicio';
@@ -20,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
+    ModclientePage,
     VerclientePage,
     ClientesPage,
     InicioPage,
@@ -38,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    ModclientePage,
     VerclientePage,
     ClientesPage,
     InicioPage,
