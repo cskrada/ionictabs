@@ -33,7 +33,7 @@
 	</ion-grid>	  	
 	<ion-list>
 
-    <button ion-item *ngFor="let item of items" class="paddinglr fuente">
+    <button ion-item *ngFor="let item of items" class="paddinglr fuente" (click)="verCliente()">
       <b>{{ item.name }}</b><br>
         <span>
           {{ item.address }}

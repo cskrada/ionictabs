@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 // import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { VerclientePage } from '../vercliente/vercliente';
+
 
 /**
  * Generated class for the ClientesPage page.
@@ -16,7 +19,7 @@ import { Component } from '@angular/core';
 export class ClientesPage {
   items;
   
-  constructor() {
+  constructor( public navCtrl: NavController ) {
   this.initializeItems();
   }
   initializeItems() {
@@ -131,5 +134,7 @@ export class ClientesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ClientesPage');
   }
-
+  verCliente(){
+  	this.navCtrl.push(VerclientePage);
+  }
 }
