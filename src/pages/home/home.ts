@@ -23,5 +23,32 @@ export class HomePage {
   	});
   	miAlerta.present();	
   }
+  alertaBasica2(){
+  	let miAlerta2 = this.alerta.create({
+  		title : 'Titulo de alerta',
+  		message : 'mensaje que puedes entregar con el boton',
+  		inputs: [
+	        {
+	          name: 'Nombre',
+	          placeholder: 'Nombre'
+	        },
+      	],
+  		buttons: [
+	        {
+	          text: 'Cancelar',
+	          handler: data => {
+	            console.log('Cancelado!');
+	          }
+	        },
+	        {
+	          text: 'Guardar',
+	          handler: data => {
+	            console.log('Guardado!');
+	          }
+	        }
+      	]
+  	});
+  	miAlerta2.present();	
+  }
 
 }
