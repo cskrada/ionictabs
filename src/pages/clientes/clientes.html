@@ -32,16 +32,16 @@
 		</ion-row>
 	</ion-grid>	  	
 	<ion-list>
-	    <ion-item *ngFor="let item of items"  class="paddinglr">
-	      <b>{{ item.name }}</b><br>
+
+    <button ion-item *ngFor="let item of items" class="paddinglr fuente">
+      <b>{{ item.name }}</b><br>
         <span>
           {{ item.address }}
           {{ item.state }} <br>
           {{ item.phone }} &nbsp;
           {{ item.email }}
         </span>
-  
-	    </ion-item>
+    </button>
 	</ion-list>
 </ion-content>
 <!-- AGREGAR BOTOOOOON DEL ICONO AGREGAR CLIENTE -->

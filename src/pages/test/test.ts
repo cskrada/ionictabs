@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+import { InicioPage } from '../inicio/inicio';
 
 /**
  * Generated class for the TestPage page.
@@ -15,11 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TestPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TestPage');
+  }
+  inicioPage(){
+  	this.navCtrl.push(InicioPage);
   }
 
 }
