@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { VerclientePage } from '../vercliente/vercliente';
+import { ClientesPage } from '../clientes/clientes';
+import { InicioPage } from '../inicio/inicio';
 import { TestPage } from '../test/test';
 import { YoutubePage } from '../youtube/youtube';
 import { AboutPage } from '../about/about';
@@ -16,6 +19,9 @@ export class TabsPage {
   tab3Root = ContactPage;
   tab4Root = YoutubePage;
   tab5Root = TestPage;
+  tab6Root = InicioPage;
+  tab7Root = ClientesPage;
+  tab8Root = VerclientePage;
 
   constructor() {
 
