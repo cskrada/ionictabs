@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ClientesPage } from '../clientes/clientes';
 
 /**
  * Generated class for the InicioPage page.
@@ -20,6 +21,10 @@ export class InicioPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InicioPage');
+  }
+
+  clientes(){
+  	this.navCtrl.push(ClientesPage);
   }
 
 }

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 // import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { VerclientePage } from '../vercliente/vercliente';
-
+import { ModclientePage } from '../modcliente/modcliente';
 
 /**
  * Generated class for the ClientesPage page.
@@ -136,5 +136,8 @@ export class ClientesPage {
   }
   verCliente(){
   	this.navCtrl.push(VerclientePage);
+  }
+  agregarCliente(){
+  	this.navCtrl.push(ModclientePage);
   }
 }
