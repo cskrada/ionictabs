@@ -110,6 +110,22 @@
         </div>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <hr>
+          <div style="display: block">
+            <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartHover)="chartHovered2($event)"
+              (chartClick)="chartClicked2($event)"></canvas>
+          </div>
+          <button (click)="randomize()">Update</button>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 
 
