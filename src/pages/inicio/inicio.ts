@@ -16,6 +16,19 @@ import { ClientesPage } from '../clientes/clientes';
 })
 export class InicioPage {
 
+  public pieChartLabels:string[] = ['Compras', 'Ganancias', 'Ventas'];
+  public pieChartData:number[] = [100, 500, 300];
+  public pieChartType:string = 'pie';
+ 
+  // events
+  public chartClicked(e:any):void {
+    console.log(e);
+  }
+ 
+  public chartHovered(e:any):void {
+    console.log(e);
+  }
+// CONSTRUCTOR ------------------------------------------------------------
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
